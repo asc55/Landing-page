@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* "Reseta" essas configurações específicas que vem por padrão nos navegadores. */
+
+body {
+    font-family: 'Poppings', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main:after {
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
+
+.logo {
+    filter: invert(1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.infos .titleAboutMe {
+    max-width: 350px;
+    filter: invert(1);
+    margin-bottom: 80px;
+}
+
+.infos .pAboutMe {
+    width: 49%;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.carouselButtons.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carouselButtons.portfolio .buttonCarousel {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.carouselButtons.portfolio .buttonCarousel.selected {
+    background-color: #1d8346;
+}
+
+.asideMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.asideMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.asideMenu .icon {
+    width: 30px;
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.asideMenu .icon:hover {
+    transform: scale(1.2);
+}
+
+.carouselImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carouselImg .imageCarousel {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: changeImage 0.7s;
+}
+
+.carouselImg .imageCarousel.activeImg {
+    display: block;
+}
+
+@keyframes changeImage {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
