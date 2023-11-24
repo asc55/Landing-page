@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="images/png" sizes="32x32" href="./src/assets/images/icon.png">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <noscript>Voce precisa </noscript>
+    <header class="pageTop">
+        <a href="./index.html">
+            <img class="logo" src="./src/assets/images/iconmonstr-building-4.svg" alt="Logo da Home">
+        </a>
+
+        <ul class="homeLinks">
+            <li><a href="#" id="buttonHome">Home</a></li>
+            <li><a href="#" id="buttonAboutMe">About Me</a></li>
+            <li><a href="#" id="buttonPortfolio">Portfolio</a></li>
+            <li><a href="#" id="buttonContact">Contact</a></li>
+        </ul>
+
+        <button id="buttonLogIn">Log In</button>
+        <button id="buttonSignIn">Sign Up</button>
+    </header>
+    <main>
+        <div class="carouselImg">
+            <img class="imageCarousel activeImg" src="https://picsum.photos/id/237/200/300" alt="">
+            <img class="imageCarousel" src="https://picsum.photos/id/238/200/300" alt="">
+            <img class="imageCarousel" src="https://picsum.photos/id/239/200/300" alt="">
+            <img class="imageCarousel" src="https://picsum.photos/id/236/200/300" alt="">
+            <img class="imageCarousel" src="https://picsum.photos/id/235/200/300" alt="">
+        </div>
+
+        <div class="content">
+            <div class="infos">
+                <h1 class="titleAboutMe">Sobre Mim:</h1>
+                <p class="pAboutMe">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, adipisci! Impedit exercitationem
+                    voluptate
+                    fugiat officia, distinctio labore quae deserunt voluptas nobis ab officiis quis sapiente pariatur
+                    quaerat
+                    provident est similique.
+                </p>
+            </div>
+
+            <div class="carouselButtons portfolio">
+                <button class="buttonCarousel selected"></button>
+                <button class="buttonCarousel"></button>
+                <button class="buttonCarousel"></button>
+                <button class="buttonCarousel"></button>
+                <button class="buttonCarousel"></button>
+            </div>
+        </div>
+        
+        <div class="sideContact">
+            <aside class="asideMenu">
+                <ul>
+                    <li id="gitHub">
+                        <a href="https://github.com/">
+                            <img class="icon" src="./src/assets/images/github.svg" alt="Logo do GitHub">
+                        </a>
+                    </li>
+                    <li id="linkedIn">
+                        <a href="https://linkedin.com/">
+                            <img class="icon" src="./src/assets/images/linkedin-in.svg" alt="Logo do LinkedIn">
+                        </a>
+                    </li>
+                    <li id="whatsApp">
+                        <a href="https://whatsapp.com/">
+                            <img class="icon" src="./src/assets/images/whatsapp-logo-variant.svg"
+                                alt="Logo do Whatsapp">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="baseBoard">
+
+        </div>
+    </footer>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
